@@ -1,0 +1,59 @@
+
+/* El selector :root establece características
+   universales para el sitio. En este caso se
+   definen una serie de variables con "--" para
+   la paleta de colores, asignando una variable
+   a cada color en cuestión. Luego, si se quiere
+   cambiar la paleta de colores, debería hacerse
+   cambiando estos parámetros en el :root*/
+
+:root {
+     --theme-color: white;
+     --primary-color: #000b76;
+     --secondary-color: #f7c331;
+     --text-color-inverse: white;
+     --text-color: black;
+     --navbar-shallow-color: #e5e5e5;
+     --menu-mobile-background-color: #3a4460;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    p
+}
+
+.logo > img {
+    height: 50px;
+    width: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.vertical-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.horizontal-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (min-width: 950px) {
+    .vertical-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .horizontal-padding {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
